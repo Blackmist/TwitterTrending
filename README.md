@@ -1,26 +1,14 @@
 #Twitter Trending topics with Apache Storm on HDInsight
 
-Learn how to use Trident to create a Storm topology that calculates trending topics (hashtags) on Twitter. Trident is a high-level abstraction that provides tools such as joins, aggregations, grouping, functions and filters. Additionally, Trident adds primitives for doing stateful, incremental processing.
+A storm topology using Trident. It calculates trending topics (hashtags) on Twitter. This is heavily based on the [trident-storm](https://github.com/jalonsoramos/trident-storm) example by Juan Alonso.
 
-##Requirements
-
-* Java 1.7
-
-* Maven
-
-* Git
-
-* A Twitter developer account
+Trident is a high-level abstraction that provides tools such as joins, aggregations, grouping, functions and filters. Additionally, Trident adds primitives for doing stateful, incremental processing. This project demonstrates how you can build a topology using a custom spout, function, and several built-in functions provided by trident.
 
 ##Download the project
 
-git clone whatever-this-project-url-is
+git clone this repository
 
-##Topology
-
-The topology for this example is as follows:
-
-![image]
+##What it does
 
 The Trident code that implements the topology is as follows:
 
@@ -60,7 +48,8 @@ The spout, **TwitterSpout** uses <a href="http://twitter4j.org/en/" target="_bla
 
 To extract hashtags, <a href="http://twitter4j.org/javadoc/twitter4j/EntitySupport.html#getHashtagEntities--" target="_blank">getHashtagEntities</a> is used to retrieve all hashtags contained in the tweet. These are then emitted to the stream.
 
-##Enable Twitter
+
+##Get a twitter account
 
 Use the following steps to register a new Twitter Application and obtain the consumer and access token information needed to read from Twitter.
 
@@ -98,13 +87,3 @@ After the topology starts, you should see debug information containing the hasht
 	DEBUG: [band, 1]
 	DEBUG: [punk, 1]
 	DEBUG: [indonesiapunkrock, 1]
-
-##Next steps
-
-Now that you have tested the topology locally, discover how to [deploy this topology to Storm on HDInsight](http://azure.microsoft.com/en-us/documentation/articles/hdinsight-storm-twitter-trending/).
-
-You may also be interested in the following Storm topics:
-
-* [Develop Java topologies for Storm on HDInsight using Maven](http://azure.microsoft.com/en-us/documentation/articles/hdinsight-storm-develop-java/)
-
-* [Develop C# topologies for Storm on HDInsight using Visual Studio](http://azure.microsoft.com/en-us/documentation/articles/hdinsight-storm-develop-csharp-visual-studio/)
