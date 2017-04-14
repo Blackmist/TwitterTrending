@@ -32,13 +32,6 @@ This does the following:
 
 Other than the spout and HashtagExtractor, we are using built-in Trident functionality.
 
-For information on built-in operations, see <a href="https://storm.apache.org/apidocs/storm/trident/operation/builtin/package-summary.html" target="_blank">storm.trident.operation.builtin</a>.
-
-For Trident-state implementations other than MemoryMapState, see the following:
-
-* <a href="https://github.com/fhussonnois/storm-trident-elasticsearch" target="_blank">https://github.com/fhussonnois/storm-trident-elasticsearch</a>
-
-* <a href="https://github.com/kstyrc/trident-redis" target="_blank">https://github.com/kstyrc/trident-redis</a>
 
 ###The spout
 
