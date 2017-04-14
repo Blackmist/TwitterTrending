@@ -1,12 +1,12 @@
 package com.microsoft.example;
 
-import storm.trident.operation.TridentCollector;
-import storm.trident.spout.IBatchSpout;
-import backtype.storm.Config;
-import backtype.storm.task.TopologyContext;
-import backtype.storm.tuple.Fields;
-import backtype.storm.tuple.Values;
-import backtype.storm.utils.Utils;
+import org.apache.storm.trident.operation.TridentCollector;
+import org.apache.storm.trident.spout.IBatchSpout;
+import org.apache.storm.Config;
+import org.apache.storm.task.TopologyContext;
+import org.apache.storm.tuple.Fields;
+import org.apache.storm.tuple.Values;
+import org.apache.storm.utils.Utils;
 
 import twitter4j.FilterQuery;
 import twitter4j.StallWarning;

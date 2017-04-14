@@ -1,16 +1,16 @@
 package com.microsoft.example;
 
-import storm.trident.TridentTopology;
-import storm.trident.operation.builtin.Count;
-import storm.trident.operation.builtin.Debug;
-import storm.trident.operation.builtin.FirstN;
-import storm.trident.spout.IBatchSpout;
-import storm.trident.testing.MemoryMapState;
-import backtype.storm.Config;
-import backtype.storm.LocalCluster;
-import backtype.storm.generated.StormTopology;
-import backtype.storm.tuple.Fields;
-import backtype.storm.StormSubmitter;
+import org.apache.storm.trident.TridentTopology;
+import org.apache.storm.trident.operation.builtin.Count;
+import org.apache.storm.trident.operation.builtin.Debug;
+import org.apache.storm.trident.operation.builtin.FirstN;
+import org.apache.storm.trident.spout.IBatchSpout;
+import org.apache.storm.trident.testing.MemoryMapState;
+import org.apache.storm.Config;
+import org.apache.storm.LocalCluster;
+import org.apache.storm.generated.StormTopology;
+import org.apache.storm.tuple.Fields;
+import org.apache.storm.StormSubmitter;
 
 import java.io.IOException;
 
