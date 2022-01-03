@@ -1,3 +1,5 @@
+IMPORTANT: I'm archiving this repo as I no longer work with HDInsight or Hadoop.
+
 #Twitter Trending topics with Apache Storm on HDInsight
 
 A storm topology using Trident. It calculates trending topics (hashtags) on Twitter. This is heavily based on the [trident-storm](https://github.com/jalonsoramos/trident-storm) example by Juan Alonso.
